@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def lista_szorzat(lista):
     prod = 1
     for item in lista:

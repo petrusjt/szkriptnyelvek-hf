@@ -32,22 +32,24 @@ def remove_adjacent(nums):
 def list_merge(list1, list2):
     i = 0
     j = 0
-
+    
     merged_list = []
     while i < len(list1) and j < len(list2):
         if list1[i] < list2[j]:
             merged_list.append(list1[i])
             i += 1
         else:
-            merged_list.append(list1[j])
+            merged_list.append(list2[j])
             j += 1
 
-    if i >= len(list1):
-        for k in range(j, len(list2)):
-            merged_list.append(list2[k])
-    else:
-        for l in range(i, len(list1)):
-            merged_list.append(list1[l])
+    while i < len(list1):
+        merged_list.append(list1[i])
+        i += 1
+
+    while j < len(list2):
+        merged_list.append(list2[j])
+        j += 1
+
     return merged_list
 
 

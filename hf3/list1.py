@@ -20,12 +20,12 @@
 # érték ezen feltételeket kielégítő sztringek száma legyen.
 # Megjegyzés: Pythonban inkrementálásra a ++ helyett a += operátort használjuk.
 def match_ends(words):
-    ans = 0
+    matching_ends_count = 0
     for word in words:
         if len(word) >= 2:
             if word[0] == word[-1]:
-                ans += 1
-    return ans
+                matching_ends_count += 1
+    return matching_ends_count
 
 
 # B. front_x

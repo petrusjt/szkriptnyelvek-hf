@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def sztring_tisztit(string : str):
+def sztring_tisztit(string):
     tiszta_string = ""
     for character in string:
         if not character.isspace():

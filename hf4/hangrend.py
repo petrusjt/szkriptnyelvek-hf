@@ -28,7 +28,7 @@ def get_hangrend(word):
 def main():
     words = ["ablak", "erkély", "kisvasút", "magas", "mély", "Pfffffff"]
     for word in words:
-        print("{}: {} hangrendű".format(word, get_hangrend(word)))
+        print("{}: {}".format(word, get_hangrend(word)))
 
 
 if __name__ == "__main__":

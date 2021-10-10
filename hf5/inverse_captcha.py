@@ -6,10 +6,12 @@ INPUT = """
 
 
 def main():
-    """Collects digits from INPUT which are the same as the following
-    digit and prints those digits' sum.
+    """Collects digits from INPUT and prints the sum of the digits.
     
-    Works circularly, so the last digit from INPUT is checked against
+    The digits collected from INPUT are followed by the same digit in
+    INPUT.
+
+    Works circularly, so the last digit from INPUT is compared with
     the first digit from INPUT."""
 
     number_list = []

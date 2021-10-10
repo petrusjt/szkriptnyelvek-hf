@@ -6,6 +6,12 @@ INPUT = """
 
 
 def main():
+    """Collects digits from INPUT which are the same as the following
+    digit and prints those digits' sum.
+    
+    Works circularly, so the last digit from INPUT is checked against
+    the first digit from INPUT."""
+
     number_list = []
     for i in range(len(INPUT)):
         if INPUT[i] == INPUT[(i+1) % len(INPUT)]:

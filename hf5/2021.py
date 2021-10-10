@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 ZERO = str(ord('a') - ord('a'))
 ONE = str(ord('b') - ord('a'))

@@ -15,9 +15,9 @@ def main():
     alphabet z-a.
     Otherwise, the script does not output anything."""
     
-    if "a-z.py" in sys.argv[0]:
+    if sys.argv[0].endswith("a-z.py"):
         print(ALPHABET)
-    elif "z-a.py" in sys.argv[0]:
+    elif sys.argv[0].endswith("z-a.py"):
         print(ALPHABET[::-1])
 
 

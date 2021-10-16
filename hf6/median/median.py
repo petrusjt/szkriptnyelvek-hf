@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def get_median(li):
+def median(li):
     lista = sorted(li)
     if len(lista) % 2 == 0:
         return lista[len(lista) // 2]
@@ -12,7 +12,12 @@ def get_median(li):
 
 
 def main():
-    pass
+    adatok = [
+        [1, 2, 3, 4, 5], [3, 1, 2, 5, 3],
+        [1, 300, 2, 200, 1], [3, 6, 20, 99, 10, 15]
+    ]
+    for adat in adatok:
+        print(f"{adat} -> {median(adat)}")
 
 
 if __name__ == "__main__":

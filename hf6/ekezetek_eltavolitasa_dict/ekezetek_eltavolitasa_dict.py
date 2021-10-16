@@ -8,7 +8,7 @@ A Marca című sportnapilap hétfői internetes kiadása szerint az együttes j�
 A döntés várhatóan nem marad politikai visszhang nélkül Spanyolországban, tekintettel a katalán önállósodási törekvésekre.
 """.strip()
 
-CONST = {
+D = {
     'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ö': 'o', 'ő': 'o', 'ú': 'u',
     'ü': 'u', 'ű': 'u', 'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ö': 'O',
     'Ő': 'O', 'Ú': 'U', 'Ü': 'U', 'Ű': 'U'
@@ -17,7 +17,7 @@ CONST = {
 
 def ekezet_eltavolit(szoveg):
     karaktermentes_szoveg = szoveg
-    for ekezetes_karakter, ekezetmentes_karakter in CONST.items():
+    for ekezetes_karakter, ekezetmentes_karakter in D.items():
         karaktermentes_szoveg = karaktermentes_szoveg.replace(ekezetes_karakter, 
             ekezetmentes_karakter)
 

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def print_queens(queens):
     print("+-----------------+")
     for i in range(8):

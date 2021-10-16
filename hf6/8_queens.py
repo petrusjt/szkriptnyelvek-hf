@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 def print_queens(queens):
-    helper_list = ['.'] * 8
     print("+-----------------+")
     for i in range(8):
         print("|", end='')

@@ -50,8 +50,13 @@ def is_valid_expression(expression):
 
 
 def main():
-    expressions = ["((5+3)*2+1)", "{[(3+1)+2]+}", "(3+{1-1)}",
-        "[1+1]+(2*2)-{3/3}", "(({[(((1)-2)+3)-3]/3}-3)"]
+    expressions = [
+        "((5+3)*2+1)",
+        "{[(3+1)+2]+}",
+        "(3+{1-1)}",
+        "[1+1]+(2*2)-{3/3}",
+        "(({[(((1)-2)+3)-3]/3}-3)"
+    ]
 
     for expression in expressions:
         print(f"{expression} -> {is_valid_expression(expression)}")

@@ -42,7 +42,7 @@ def is_valid_expression(expression):
         for other_bracket in bracket_list:
             if item != other_bracket:
                 if (is_between(item[0], other_bracket[0], other_bracket[1])
-                    != is_between(item[1], other_bracket[0], other_bracket[1])):
+                        != is_between(item[1], other_bracket[0], other_bracket[1])):
                     return False
 
     return True

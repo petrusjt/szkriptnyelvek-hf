@@ -33,7 +33,6 @@ def create_bracket_list(expression):
     return brackets
                 
 
-
 def is_valid_expression(expression):
     bracket_list = create_bracket_list(expression)
     if bracket_list == []:

@@ -20,8 +20,6 @@ class Verem:
     def __str__(self):
         return "[" + " ".join([str(item) for item in self.inner_list])
 
-    
-
 
 def main():
     v = Verem()      # üres verem létrehozása

@@ -2,3 +2,5 @@
 **/__pycache__/*
 hf7_zippelendo
 hf7_zippelendo/*
+
+.idea/**

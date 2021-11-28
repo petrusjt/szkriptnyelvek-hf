@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
-from typing import Tuple
 
-
-def myfunc1(item: Tuple[int, str, str, int]) -> int:
+def myfunc1(item):
     return item[3]
 
 

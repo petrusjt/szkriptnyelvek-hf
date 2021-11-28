@@ -9,7 +9,7 @@ def main():
         for j in range(i, CELLAK_SZAMA, i + 1):
             cellak[j] = not cellak[j]
 
-    nyitott_cellak = [str(idx + 1) for idx, item in enumerate(cellak) if item]
+    nyitott_cellak = [str(i + 1) for i, cella in enumerate(cellak) if cella]
     print(", ".join(nyitott_cellak))
 
 
